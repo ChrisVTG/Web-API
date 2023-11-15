@@ -1,0 +1,48 @@
+@* - N° d'échantillon *@
+@* - Date de prélèvement *@
+@* - Date de réception *@
+@* - Date d'analyse *@
+@* - Analysé par (qui ?) *@
+@* - Résultat *@
+@* - Commentaire éventuel *@
+
+@model PcrTestEditViewModel
+
+<h1>Création d'un test PCR</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label class="form-label">N° d'échantillon</label>
+        <input type="text" class="form-control" name="sampleNumber">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date de prélèvement</label>
+        <input type="datetime-local" class="form-control" name="samplingDate">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date de réception</label>
+        <input type="date" class="form-control" name="receptionDate">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date d'analyse</label>
+        <input type="date" class="form-control" name="analysisDate">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Exécutant</label>
+        <input type="text" class="form-control" name="performer">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Résultat du test</label>
+        <select class="form-select" name="analysisResult">
+            <option selected>Veuillez sélectionner un résultat de test</option>
+            <option value="1">Positif</option>
+            <option value="2">Négatif</option>
+            <option value="3">Non contributif</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Commentaire</label>
+        <textarea class="form-control" rows="4" name="comment"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>

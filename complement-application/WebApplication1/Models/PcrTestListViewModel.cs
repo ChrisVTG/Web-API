@@ -1,19 +1,21 @@
-using System.ComponentModel.DataAnnotations;
 using WebApplication1.Enums;
 
 namespace WebApplication1.Models;
 
-public class PcrTestEditViewModel
+public class PcrTestListViewModel
+{
+    public int AnalyzedSamplesCount { get; set; }
+    public List<PcrTestListItemViewModel> Items { get; set; }
+}
+
+public class PcrTestListItemViewModel
 {
     public int Id { get; set; }
-    [Display(Name = "N° d'échantillon")]
-    [StringLength(8, ErrorMessage = "Le n° d'échantillon doit faire entre 4 et 8 caractères maximum.", MinimumLength = 4)]
-    [Required(ErrorMessage = "Le champ 'N° d'échantillon' est requis.")]
     public string SampleNumber { get; set; }
+    public DateTime CreationDate { get; set; }
     public DateTime SamplingDate { get; set; }
     public DateTime? ReceptionDate { get; set; }
     public DateTime? AnalysisDate { get; set; }
     public string? Performer { get; set; }
     public AnalysisResultEnum? AnalysisResult { get; set; }
-    public string? Comment { get; set; }
 }

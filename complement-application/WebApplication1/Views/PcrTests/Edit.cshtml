@@ -1,0 +1,67 @@
+@* - N° d'échantillon *@
+@* - Date de prélèvement *@
+@* - Date de réception *@
+@* - Date d'analyse *@
+@* - Analysé par (qui ?) *@
+@* - Résultat *@
+@* - Commentaire éventuel *@
+
+@using WebApplication1.Enums
+@model PcrTestEditViewModel
+
+@{
+    var i = 0;
+    var myPassword = "test123$$";
+}
+
+@if (Model.Id <= 0)
+{
+    <h1>Création d'un test PCR</h1>
+}
+else
+{
+    <h1>Modification d'un test PCR d'identifiant @Model.Id</h1>
+}
+
+
+<form method="post">
+    @* @Html.ValidationSummary() *@
+    <div class="form-group">
+        <label class="form-label" asp-for="SampleNumber"></label>
+        <input type="text" class="form-control" asp-for="SampleNumber" placeholder="12345678">
+        <span class="text-danger" asp-validation-for="SampleNumber"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date de prélèvement</label>
+        <input type="datetime-local" class="form-control" asp-for="SamplingDate">
+        <span class="text-danger" asp-validation-for="SamplingDate"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date de réception</label>
+        <input type="date" class="form-control" asp-for="ReceptionDate">
+        <span class="text-danger" asp-validation-for="ReceptionDate"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Date d'analyse</label>
+        <input type="date" class="form-control" asp-for="AnalysisDate">
+        <span class="text-danger" asp-validation-for="AnalysisDate"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Exécutant</label>
+        <input type="text" class="form-control" asp-for="Performer">
+        <span class="text-danger" asp-validation-for="Performer"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Résultat du test</label>
+        <select class="form-select" asp-for="AnalysisResult" asp-items="Html.GetEnumSelectList<AnalysisResultEnum>()">
+            <option value="" selected>Veuillez sélectionner un résultat de test</option>
+        </select>
+        <span class="text-danger" asp-validation-for="AnalysisResult"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Commentaire</label>
+        <textarea class="form-control" rows="4" asp-for="Comment"></textarea>
+        <span class="text-danger" asp-validation-for="Comment"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
