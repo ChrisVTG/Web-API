@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication1.Enums;
 
 namespace WebApplication1.Models;
@@ -13,7 +14,8 @@ public class PcrTestEditViewModel
     public DateTime SamplingDate { get; set; }
     public DateTime? ReceptionDate { get; set; }
     public DateTime? AnalysisDate { get; set; }
-    public string? Performer { get; set; }
+    public int? PerformerId { get; set; }
     public AnalysisResultEnum? AnalysisResult { get; set; }
     public string? Comment { get; set; }
+    public List<SelectListItem> SliPerformers { get; set; }
 }

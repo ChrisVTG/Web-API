@@ -7,6 +7,7 @@ namespace WebApplication1.Persistence;
 public class PcrContext : DbContext
 {
     public DbSet<PcrTest> PcrTests { get; set; }
+    public DbSet<User> Users { get; set; }
 
     public PcrContext(DbContextOptions<PcrContext> options) : base(options)
     {
@@ -31,7 +32,8 @@ public class PcrContext : DbContext
                 AnalysisDate = new DateTime(2023, 11, 2),
                 AnalysisResult = AnalysisResultEnum.Positive,
                 SampleNumber = "ABCD1234",
-                Performer = "Ludwig Lebrun",
+                // Performer = "Ludwig Lebrun",
+                PerformerId = 1,
                 Comment = "this is my comment 1"
             },
             new PcrTest()
@@ -43,8 +45,22 @@ public class PcrContext : DbContext
                 AnalysisDate = new DateTime(2023, 11, 24),
                 AnalysisResult = AnalysisResultEnum.Negative,
                 SampleNumber = "ZREZ5241",
-                Performer = "Ludwig Leblanc",
+                // Performer = "Ludwig Leblanc",
+                PerformerId = 2,
                 Comment = "this is my comment 2"
+            });
+        
+        modelBuilder.Entity<User>().HasData(new User()
+            {
+                Id = 1,
+                FirstName = "Ludwig",
+                LastName = "Lebrun"
+            },
+            new User()
+            {
+                Id = 2,
+                FirstName = "Ludwig",
+                LastName = "Leblanc"
             });
     }
 }

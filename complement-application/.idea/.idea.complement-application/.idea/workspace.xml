@@ -23,8 +23,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fd4c7ce3-f174-4a22-b615-fc2feab4be6a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.complement-application/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.complement-application/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/PcrTestsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Controllers/PcrTestsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Entities/PcrTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Entities/PcrTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/PcrContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Migrations/PcrContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Models/PcrTestEditViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/PcrTestEditViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complement-application.sln" beforeDir="false" afterPath="$PROJECT_DIR$/complement-application.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/PcrDatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/PcrDatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Persistence/PcrContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Persistence/PcrContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/PcrTests/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/PcrTests/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/PcrTests/List.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/PcrTests/List.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +56,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.50198674",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50198674&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\lle\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\lle\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\lle\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\lle\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\lle\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\lle\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1: http">
     <configuration name="Conditions" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -356,19 +362,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication1/Controllers/PcrTestsController.cs</url>
-          <line>24</line>
-          <properties documentPath="D:\# BAC CYBER SECURITE\condorcet-2024\complement-application\WebApplication1\Controllers\PcrTestsController.cs" initialLine="24" containingFunctionPresentation="Method 'List'">
-            <startOffsets>
-              <option value="809" />
-            </startOffsets>
-            <endOffsets>
-              <option value="848" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

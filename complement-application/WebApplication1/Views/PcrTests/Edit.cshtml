@@ -46,10 +46,16 @@ else
         <input type="date" class="form-control" asp-for="AnalysisDate">
         <span class="text-danger" asp-validation-for="AnalysisDate"></span>
     </div>
+    @* <div class="form-group"> *@
+    @*     <label class="form-label">Exécutant</label> *@
+    @*     <input type="text" class="form-control" asp-for="Performer"> *@
+    @*     <span class="text-danger" asp-validation-for="Performer"></span> *@
+    @* </div> *@
     <div class="form-group">
         <label class="form-label">Exécutant</label>
-        <input type="text" class="form-control" asp-for="Performer">
-        <span class="text-danger" asp-validation-for="Performer"></span>
+        <select class="form-select" asp-for="PerformerId" asp-items="Model.SliPerformers">
+            <option value="" selected>Veuillez sélectionner un exécutant</option>
+        </select>
     </div>
     <div class="form-group">
         <label class="form-label">Résultat du test</label>

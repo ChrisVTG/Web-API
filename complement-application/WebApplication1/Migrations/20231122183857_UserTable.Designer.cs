@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication1.Persistence;
 
@@ -10,9 +11,11 @@ using WebApplication1.Persistence;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(PcrContext))]
-    partial class PcrContextModelSnapshot : ModelSnapshot
+    [Migration("20231122183857_UserTable")]
+    partial class UserTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.14");
@@ -64,7 +67,6 @@ namespace WebApplication1.Migrations
                             AnalysisResult = "Positive",
                             Comment = "this is my comment 1",
                             CreationDate = new DateTime(2023, 10, 30, 12, 54, 30, 0, DateTimeKind.Unspecified),
-                            PerformerId = 1,
                             ReceptionDate = new DateTime(2023, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SampleNumber = "ABCD1234",
                             SamplingDate = new DateTime(2023, 10, 30, 12, 54, 30, 0, DateTimeKind.Unspecified)
@@ -76,7 +78,6 @@ namespace WebApplication1.Migrations
                             AnalysisResult = "Negative",
                             Comment = "this is my comment 2",
                             CreationDate = new DateTime(2023, 11, 21, 9, 31, 24, 0, DateTimeKind.Unspecified),
-                            PerformerId = 2,
                             ReceptionDate = new DateTime(2023, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SampleNumber = "ZREZ5241",
                             SamplingDate = new DateTime(2023, 11, 21, 9, 31, 24, 0, DateTimeKind.Unspecified)
@@ -100,20 +101,6 @@ namespace WebApplication1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            FirstName = "Ludwig",
-                            LastName = "Lebrun"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            FirstName = "Ludwig",
-                            LastName = "Leblanc"
-                        });
                 });
 
             modelBuilder.Entity("WebApplication1.Entities.PcrTest", b =>
