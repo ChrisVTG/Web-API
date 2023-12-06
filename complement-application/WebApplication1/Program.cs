@@ -1,6 +1,6 @@
 using NToastNotify;
 using WebApplication1.Configurations;
-using WebApplication1.Persistence;
+using WebApplicationPersistence.DbContexts;
 
 var builder = WebApplication.CreateBuilder(args);
 

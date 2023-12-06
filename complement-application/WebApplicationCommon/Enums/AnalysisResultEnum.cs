@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication1.Enums;
+namespace WebApplicationCommon.Enums;
 
 public enum AnalysisResultEnum
 {

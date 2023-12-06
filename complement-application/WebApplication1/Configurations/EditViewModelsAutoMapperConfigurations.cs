@@ -1,6 +1,6 @@
 using AutoMapper;
-using WebApplication1.Entities;
 using WebApplication1.Models;
+using WebApplicationEntities;
 
 namespace WebApplication1.Configurations;
 

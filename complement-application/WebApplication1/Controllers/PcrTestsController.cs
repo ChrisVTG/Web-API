@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NToastNotify;
-using WebApplication1.Entities;
 using WebApplication1.Models;
-using WebApplication1.Persistence;
+using WebApplicationEntities;
+using WebApplicationPersistence.DbContexts;
 
 namespace WebApplication1.Controllers;
 

@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using WebApplication1.Entities;
-using WebApplication1.Enums;
+using WebApplicationCommon.Enums;
+using WebApplicationEntities;
 
-namespace WebApplication1.Persistence;
+namespace WebApplicationPersistence.DbContexts;
 
 public class PcrContext : DbContext
 {
