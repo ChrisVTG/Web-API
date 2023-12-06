@@ -29,7 +29,7 @@
             <td>@item.SamplingDate.ToString("dd-MM-yyyy HH:mm")</td>
             <td>@item.ReceptionDate?.ToString("dd-MM-yyyy")</td>
             <td>@item.AnalysisDate?.ToString("dd-MM-yyyy")</td>
-            <td>@(item.Performer ?? "")</td>
+            <td>@item.Performer</td>
             <td>@(item.AnalysisResult?.ToString() ?? "")</td>
             @* asp-route-id = asp-route-<name of parameter in "kebab-case"> *@
             @* if parameter's name is 'myRandomId', should be asp-route-my-random-id *@

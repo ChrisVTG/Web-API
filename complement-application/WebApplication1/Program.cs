@@ -1,3 +1,5 @@
+using NToastNotify;
+using WebApplication1.Configurations;
 using WebApplication1.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSqlite<PcrContext>(builder.Configuration.GetConnectionString("PcrDatabase"));
+builder.Services.AddAutoMapper(typeof(EditViewModelsAutoMapperConfigurations).Assembly);
+builder.Services.AddMvc().AddNToastNotifyNoty(new NotyOptions {
+    ProgressBar = true,
+    Timeout = 5000,
+    Theme = "mint"
+});
 
 var app = builder.Build();
 
@@ -22,6 +30,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseNToastNotify();
 
 app.MapControllerRoute(
     name: "default",
