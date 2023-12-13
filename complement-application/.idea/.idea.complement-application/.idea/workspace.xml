@@ -31,29 +31,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4c7ce3-f174-4a22-b615-fc2feab4be6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebApplicationAPI/Configurations/DtosAutoMapperConfigurations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.complement-application/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.complement-application/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Configurations/EditViewModelsAutoMapperConfigurations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Configurations/EditViewModelsAutoMapperConfigurations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Configurations/ListViewModelsAutoMapperConfigurations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Configurations/ListViewModelsAutoMapperConfigurations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Controllers/PcrTestsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Controllers/PcrTestsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Entities/PcrTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationEntities/PcrTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationEntities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Enums/AnalysisResultEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationCommon/Enums/AnalysisResultEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231115200152_Init.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231115200152_Init.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231115200152_Init.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231115200152_Init.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231115201007_FakeData.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231115201007_FakeData.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231115201007_FakeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231115201007_FakeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231122183857_UserTable.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231122183857_UserTable.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231122183857_UserTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231122183857_UserTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231122184623_UpdateFakeData.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231122184623_UpdateFakeData.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/20231122184623_UpdateFakeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/20231122184623_UpdateFakeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Migrations/PcrContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/Migrations/PcrContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/PcrTestEditViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/PcrTestEditViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Models/PcrTestListViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Models/PcrTestListViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Persistence/PcrContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationPersistence/DbContexts/PcrContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Views/PcrTests/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Views/PcrTests/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complement-application.sln" beforeDir="false" afterPath="$PROJECT_DIR$/complement-application.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/PcrDatabase.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/PcrDatabase.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/PcrDatabase.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/PcrDatabase.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationAPI/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationAPI/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationAPI/WebApplicationAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationAPI/WebApplicationAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationAPI/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +50,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22efe895cfcdc441cc9e14722e20437fcf7013e6e869636733169ad499b7bb28/NoContentResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/275552b120b29f51ba6d9d2c4e46c2e38db491e9425b34cc86adf4824f59210/Skip.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4916d3599f29b249967c768ee4292b529b76f7285f1535baa99792cf3ed26f/HostEnvironmentEnvExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4d58bf222445c1e1d9a2ac80c943e86ee039d590e9c11cdd5e54f06d3f6770/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6d894e53c1d0e27ee0e666475a55d3c2db944f4221f0b6de4ebda38ff1fa/IActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7641a1a0695522e81971758464776ba68659afdcd53575f6917f7593181d9345/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a22345af3778e6d675cfffd869c9619291a38b3e0b87e8cd28c4cc8f480db21/DefaultInterpolatedStringHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a5e58dccdbab46034d881e3f74ddc716acd42986f26c16ff6e1419636d926f/Regex.Replace.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eb399e8422645028f9bed95b8faa99fc68caa3329191d1e671da9dc4b3dcbe99/StatusCodeResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Models/PcrTestEditViewModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -99,7 +90,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplicationAPI: http">
     <configuration name="Conditions" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
