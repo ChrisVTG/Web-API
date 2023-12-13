@@ -1,0 +1,5 @@
+https://nelsonparente.medium.com/modeling-your-rest-api-responses-d9286eaa6ce3
+https://restfulapi.net/http-methods/
+https://www.javaguides.net/2021/01/rest-api-http-methods.html
+https://petstore.swagger.io/
+https://www.rfc-editor.org/rfc/rfc7231#section-4.3.1
